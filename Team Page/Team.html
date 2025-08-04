@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Team Page</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+   </head>
+   <body>
+      <!-- Start Navbar -->
+      <header>
+         <nav class="navbar">
+            <div class="nav-brand">Maaz Ahmad</div>
+            <div class="nav-toggle" id="nav-toggle">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Services</a></li>
+               <li><a href="#">Projects</a></li>
+               <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+      <!-- End Navbar -->
+      <!-- Start Hero Banner -->
+      <section class="hero-wrapper">
+         <!-- Background Carousel -->
+         <div class="bg-slide active" style="background-image: url('assets/images/hero-background1.jpg');"></div>
+         <div class="bg-slide" style="background-image: url('assets/images/hero-background2.png');"></div>
+         <div class="bg-slide" style="background-image: url('assets/images/hero-background3.jpg');"></div>
+         <div class="hero-overlay"></div>
+         <!-- Content -->
+         <div class="hero-content">
+            <!-- Left: Text Carousel -->
+            <div class="hero-text">
+               <div class="text-slide active">
+                  <h1 style="color: #FF5101;">Meet Our Team</h1>
+                  <p>We’re a group of creative thinkers and problem solvers building awesome digital products.</p>
+               </div>
+               <div class="text-slide">
+                  <h1 style="color: #FF5101;">Creative Minds</h1>
+                  <p>We believe in innovation, collaboration, and building experiences that matter.</p>
+               </div>
+               <div class="text-slide">
+                  <h1 style="color: #FF5101;">Driven by Passion</h1>
+                  <p>Every line of code we write is crafted with care and purpose for your brand’s success.</p>
+               </div>
+            </div>
+            <!-- Right: Image Carousel -->
+            <div class="hero-image">
+               <img src="assets/images/team1.jpg" class="active" alt="Team Member 1">
+               <img src="assets/images/team2.png" alt="Team Member 2">
+               <img src="assets/images/team4.jpg" alt="Team Member 3">
+            </div>
+         </div>
+      </section>
+      <!-- End Hero Banner -->
+      <!-- Start Team Introduction -->
+      <section class="team-intro-section">
+         <div class="container">
+            <h2 class="section-heading">Our People Make the Magic</h2>
+            <p class="section-description">
+               At the heart of every great product is a great team. We are designers, developers, strategists, and creators committed to delivering excellence in every pixel. With a passion for innovation and a drive to solve real-world problems, we collaborate to bring ideas to life.
+            </p>
+         </div>
+      </section>
+      <!-- End Team Introduction -->
+      <!-- Start Team Member Grid -->
+      <section class="team-section">
+         <div class="container">
+            <h2 class="section-heading">Meet Our Experts</h2>
+            <div class="filter-buttons">
+               <button class="filter-btn active" data-role="all">All</button>
+               <button class="filter-btn" data-role="Developer">Developer</button>
+               <button class="filter-btn" data-role="Designer">Designer</button>
+               <button class="filter-btn" data-role="Manager">Manager</button>
+            </div>
+            <div class="team-grid">
+               <!-- Team Member Card -->
+               <div class="team-card" data-role="Developer" onclick="openModal(this)">
+                  <img src="assets/images/team1.jpg" alt="John Doe">
+                  <div class="card-content">
+                     <h3>John Doe</h3>
+                     <p class="role">Front-End Developer</p>
+                  </div>
+                  <div class="overlay">
+                     <p>Specialist in HTML, CSS, JS and animations.</p>
+                     <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="team-card" data-role="Designer" onclick="openModal(this)">
+                  <img src="assets/images/team2.png" alt="Jane Smith">
+                  <div class="card-content">
+                     <h3>Jane Smith</h3>
+                     <p class="role">UI/UX Designer</p>
+                  </div>
+                  <div class="overlay">
+                     <p>Designs that feel as good as they look.</p>
+                     <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="team-card" data-role="Designer" onclick="openModal(this)">
+                  <img src="assets/images/team5.png" alt="Jane Smith">
+                  <div class="card-content">
+                     <h3>Sarah Orwall</h3>
+                     <p class="role">UI/UX Designer</p>
+                  </div>
+                  <div class="overlay">
+                     <p>Designs that feel as good as they look.</p>
+                     <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="team-card" data-role="Manager" onclick="openModal(this)">
+                  <img src="assets/images/team4.jpg" alt="Alice">
+                  <div class="card-content">
+                     <h3>Alice Lee</h3>
+                     <p class="role">Project Manager</p>
+                  </div>
+                  <div class="overlay">
+                     <p>Bringing teams together for success.</p>
+                     <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="team-card" data-role="Developer" onclick="openModal(this)">
+                  <img src="assets/images/team3.jpg" alt="Daniel Ray">
+                  <div class="card-content">
+                     <h3>Daniel Ray</h3>
+                     <p class="role">Backend Developer</p>
+                  </div>
+                  <div class="overlay">
+                     <p>Builds scalable & secure backend systems.</p>
+                     <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Modal -->
+      <div id="team-modal" class="modal">
+         <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-details"></div>
+         </div>
+      </div>
+      <!-- End Team Member Grid -->
+      <!-- Start Footer -->
+      <footer class="site-footer">
+         <div class="footer-container">
+            <div class="footer-left">
+               <h3>Maaz Ahmad</h3>
+               <p>Front-End Developer | Data Science Enthusiast</p>
+            </div>
+            <div class="footer-center">
+               <ul class="footer-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">Contact</a></li>
+               </ul>
+            </div>
+            <div class="footer-right">
+               <div class="social-icons">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#"><i class="fab fa-github"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <p>© 2025 Maaz Ahmad. All rights reserved.</p>
+         </div>
+      </footer>
+      <!-- End Footer -->
+      <script src="assets/js/script.js"></script>
+   </body>
+</html>
